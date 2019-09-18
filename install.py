@@ -41,7 +41,7 @@ if not path_exists:
   os.system("mkdir %s" % script_dir)
 
 print "Retrieving configuration"
-load_config("https://raw.githubusercontent.com//LeHoaiLinh278/openpilot_dev/master/config.json")
+load_config("https://raw.githubusercontent.com/LeHoaiLinh278/openpilot_dev/master/config.json")
 config = json.load(open("%s/config.json" % script_dir))
 
 file_exists = os.path.exists("%s/ai.comma.plus.frame.apk" % script_dir)
