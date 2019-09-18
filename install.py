@@ -49,7 +49,7 @@ file_exists = os.path.exists("%s/ai.comma.plus.frame.apk" % script_dir)
 print "Downloading APK"
 download(config['apk_url'], "ai.comma.plus.frame.apk")
 
-print "Running installer"https://raw.githubusercontent.com/LeHoaiLinh278/openpilot_dev/master/config.json
+print "Running installer"
 run_installer(config['installer'],config['apk_hash'],config['config_url'],config['apk_url'])
 
 print "Installing scripts"
