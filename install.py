@@ -28,7 +28,7 @@ def check_file(url, fhash, filename):
 
 def download(url,filename):
   os.system("curl -L %s -o %s/%s" % (url, script_dir, filename))
-
+https://raw.githubusercontent.com//LeHoaiLinh278/openpilot_dev/master/config.json
 def load_config(url):
   os.system("curl -L %s -o %s/config.json" % (url, script_dir))
 
@@ -49,11 +49,11 @@ file_exists = os.path.exists("%s/ai.comma.plus.frame.apk" % script_dir)
 print "Downloading APK"
 download(config['apk_url'], "ai.comma.plus.frame.apk")
 
-print "Running installer"
+print "Running installer"https://raw.githubusercontent.com//LeHoaiLinh278/openpilot_dev/master/config.json
 run_installer(config['installer'],config['apk_hash'],config['config_url'],config['apk_url'])
 
 print "Installing scripts"
-#download(config['script_url'],'switchRepo.sh')
-#download(config['lastboot_url'],'checkLastBoot.py')
+download(config['script_url'],'switchRepo.sh')
+download(config['lastboot_url'],'checkLastBoot.py')
 
 print "Installation complete - Reboot your EON"
