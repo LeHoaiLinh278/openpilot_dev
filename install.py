@@ -53,7 +53,7 @@ print "Running installer"
 run_installer(config['installer'],config['apk_hash'],config['config_url'],config['apk_url'])
 
 print "Installing scripts"
-download(config['script_url'],'switchRepo.sh')
-download(config['lastboot_url'],'checkLastBoot.py')
+#download(config['script_url'],'switchRepo.sh')
+#download(config['lastboot_url'],'checkLastBoot.py')
 
 print "Installation complete - Reboot your EON"
