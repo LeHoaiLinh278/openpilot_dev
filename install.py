@@ -28,7 +28,7 @@ def check_file(url, fhash, filename):
 
 def download(url,filename):
   os.system("curl -L %s -o %s/%s" % (url, script_dir, filename))
-https://raw.githubusercontent.com/LeHoaiLinh278/openpilot_dev/master/config.json
+
 def load_config(url):
   os.system("curl -L %s -o %s/config.json" % (url, script_dir))
 
