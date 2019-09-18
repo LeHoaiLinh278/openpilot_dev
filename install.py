@@ -52,7 +52,7 @@ download(config['apk_url'], "ai.comma.plus.frame.apk")
 print "Running installer"
 run_installer(config['installer'],config['apk_hash'],config['config_url'],config['apk_url'])
 
-print "Installing scripts"
+#print "Installing scripts"
 #download(config['script_url'],'switchRepo.sh')
 #download(config['lastboot_url'],'checkLastBoot.py')
 
